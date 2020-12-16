@@ -413,3 +413,77 @@ so it fits on 1024x768 screens.*/
     background-color: #1e3f5d;
 }
 /*Buttons End*/
+
+
+/* Page 2 */
+
+#contentAreaBig
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+}
+
+#contentAreaBigTwo
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+}
+
+/*Text*/
+.pagetitle
+{
+    font-family: Gabriola, Times New Roman, serif;
+    font-size: 40px;
+    line-height: 15px;
+}
+
+.pagetitleText
+{
+    font-family: Gabriola, Times New Roman, serif;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+
+
+.price
+{
+    font-size: 17px;
+}
+
+#productImagesBottom 
+{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#productImages 
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productImg 
+{
+    width: 280px;
+}
+
+#viewMore 
+{
+  opacity: 0.5;
+}
+
+#viewMore:hover 
+{
+  opacity: 1.0;
+}
+
