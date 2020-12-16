@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+    margin: 0; 
+    padding: 0; 
+}   
+
+img 
+{ 
+    border: none; /*Remove border if image is a link*/
+    margin: 0; 
+    padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #444444;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+    text-decoration:none;   
+}
+
+a:hover, a:active 
+{ 
+    text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+    display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+
+#topBar
+{
+    background-color: #ff0f0f;
+    height: 40px;
+}
+
+#topBar div
+{
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) 
+so it fits on 1024x768 screens.*/
+
+#container 
+{
+    margin: 0 auto;
+    width: 920px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*This is a flex container*/
+
+#mainHeader
+{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #DDD;
+}
+
+/*This is a flex item*/
+
+#logo
+{
+    width: 200px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+
+
+
+/* Main Navigation */
+
+#mainNav 
+{
+    margin-left: auto;
+    width: 500px;
+}
+
+.mainNav ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.mainNav ul li
+{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: Centaur, Times New Roman, serif;
+    font-weight: bold;
+    display: inline;
+    margin-left: 55px;
+}
+
+.mainNav ul li a
+{
+    color: #3862ae;
+    padding: 2px;
+}
+
+.mainNav ul li a:hover
+{
+    background-color: #c6e4ee;
+
+}
+
+.selected
+{
+    padding: 2px 0px 2px 0px; /*trbl*/
+    background-color: #c6e4ee;
+}
+
+/* Footer */
+
+#mainFooter 
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#copyRight 
+{
+    margin-left: auto;
+    width: 310px;
+}
+
+#copyRight p
+{
+    text-align: right;
+    padding-top: 50px;
+}
+
+/* Footer Navigation */
+
+#footerNav 
+{
+    width: 500px;
+}
+
+.footerNav ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerNav ul li
+{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-family: Centaur, Times New Roman, serif;
+    font-weight: bold;
+    display: inline;
+    margin-left: 55px;
+}
+
+.footerNav ul li a
+{
+    color: #3862ae;
+    padding: 2px;
+}
+
+.footerNav ul li a:hover
+{
+    background-color: #c6e4ee;
+
+}
+
+/* Social Media */
+
+.socialMedia
+{
+    margin-left: 100px;
+}
+
+#iconNav img
+{
+    width: 45px;
+    height: 45px;
+}
+
+#iconNav
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#iconNav li
+{
+    display: inline;
+    margin-right: 10px;
+}
+
+#iconNav li a
+{
+    filter: grayscale(100%);
+}
+
+#iconNav li a:hover
+{
+    filter: grayscale(0%);
+}
+
+
+
+/* Page 1 */
+
+#promo 
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#promoImageBig
+{
+    width: 920px;
+    position: relative;
+}
+
+#promoTwo 
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#promoImageBigTwo
+{
+    width: 920px;
+    position: relative;
+}
+
+
+/*Overlay Text Start*/
+.textContainer
+{
+    position: relative;
+}
+
+.textBlockOne
+{
+  position: absolute;
+  bottom: 100px;
+  top: 130px;
+  left: 100px;
+  background-color: #000; opacity: 0.7;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+ .textBlockOne h2
+ {
+    font-size: 35px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Gabriola, Times New Roman, serif;
+ }
+
+ .textBlockOne h3
+ {
+    font-weight: lighter;
+    line-height: 27px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Gabriola, Times New Roman, serif;
+ }
+
+ .textBlockTwo
+{
+  position: absolute;
+  bottom: 130px;
+  top: 100px;
+  left: 50px;
+  background-color: #000; opacity: 0.7;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+ .textBlockTwo h2
+ {
+    font-size: 30px;
+    text-align: center;
+ }
+
+ .textBlockTwo h3
+ {
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+ }
+ /*Overlay Text End*/
+
+#companyInfo 
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+}
+
+#companyInfo img
+{
+    margin-right: 60px;
+}
+
+.companyDescLargeLeft 
+{
+    width: 410px;
+}
+
+.companyDescRight 
+{
+    width: 410px;
+}
+
+
+
+#productInfo 
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+}
+
+#productInfo img:hover 
+{
+  opacity: 0.5;
+}
+
+.productDescLargeLeft 
+{
+    width: 410px;
+}
+
+.productDescLargeRight 
+{
+    width: 410px;
+}
+
+/* Text */
+.subtitle
+{
+    font-family: Gabriola, Times New Roman, serif;
+    font-size: 30px;
+    line-height: 10px;
+}
+
+/*Buttons Start*/
+.resBut
+{
+    display: block;
+    width: 110px;
+    background-color: #2e5984;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.resBut:hover
+{
+    background-color: #1e3f5d;
+}
+/*Buttons End*/
