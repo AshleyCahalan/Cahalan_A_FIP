@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Village Keeper - Contact</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+</head>
+
+<body>
+
+    <h1 class="hidden">The Village Keeper Contact Page</h1>
+
+    <section id="topBar">
+        <h2 class="hidden">Topbar Notice</h2>
+        <div>Due to COVID-19 restrictions, purchases can only be made online until further notice.</div>
+    </section>
+    <!--end topBar-->
+    
+    <!-- Container -->
+    <div id="container">
+
+        <header id="mainHeader">
+            <div id="logo">
+                <img src="images/thevillagekeeper_logo.svg" alt="The Village Keeper Logo" width="150" height="160">
+            </div>
+            <!--end logo-->
+
+            <nav class="mainNav">
+            <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">SALE</a></li>
+                    <li><a href="products.html">SHOP</a></li>
+                    <li class="selected"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!--end mainNav-->
+        </header>
+        <!--end mainHeader-->
+
+        
+        <section id="contentCon">
+
+            <div id="content1">
+
+                <h2 class="hidden">Contact Information</h2>
+                <h2 class="pagetitle">Contact Us!</h2>
+                <p class="contactText">To contact us, please fill out the form below.</p>
+                
+            <main role="main" id="mainContact">
+            <!--start mainContact-->
+            <section id="contactArea">
+            <!--start contactArea-->
+            <h2 class="hidden">Contact Form</h2>
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="firstName">First Name:     *required</label>
+                    <input type="text" required id="firstName" name="firstName" size="30" placeholder="Your first name">
+                    
+                    <label for="lastName">Last Name:     *required</label>
+                    <input type="text" required id="lastName" name="lastName" size="30" placeholder="Your last name">
+
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" required id="phone" size="30" placeholder="Enter phone number">
+
+                    <label for="email">Email:     *required</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter email address">
+                    
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" required cols="30" rows="8"></textarea>
+                    
+                    <label for="human">What is 9 + 8?</label>
+                    <input type="text" required id="human" size="30" placeholder="What is 9 + 8?">
+                   
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+            </section>
+            <!--end contactArea-->
+            </main> 
+
+            </div>
+            <!--end content1-->
+
+            
+            <div id="content2">
+                <div><img src="images/web_mailman.jpg" alt="Village Mailman" width="440" height="220">
+                <h2 class="subtitle">Christmas is Coming! Don't Miss a Discount</h2>
+                <p>To hear about all our promotions and discounts, subscribe to our <a href="#" id="newsletter">Newsletter</a>.</p></div>
+
+                <h2 id="employment">Employment Opportunities</h2>
+                <p>Our positions are currently filled. Check back soon!<p>
+                <a href="#" class="resBut">APPLY NOW</a>
+                <a href="#" class="resBut">LEARN MORE</a>
+            </div>
+            <!--end content2-->
+
+        </section>
+        <!--end contentCon-->
+        
+        <footer id="mainFooter">
+            <div class="footerNav">
+                <h2 class="hidden">Footer Navigation</h2>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">SALE</a></li>
+                    <li><a href="products.html">SHOP</a></li>
+                    <li class="selected"><a href="#">CONTACT</a></li>
+                </ul> 
+            </div><!--end FooterNav-->
+
+            <div id="copyRight">
+            
+            <div class="socialMedia">
+            <h2 class="hidden">Social Media</h2>
+                <ul id="iconNav">
+                    <li id="facebook"><a href="http://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a></li>
+                    <li id="twitter"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a></li>
+                    <li id="youtube"><a href="http://www.youtube.com" target="_blank"><img src="images/youtube.svg" alt="Youtube"></a></li>
+                </ul>
+            </div>
+      
+            <p>&copy; 2020 The Village Keeper.</p></div>
+            <!--end Copyright-->
+
+        </footer>
+        <!--end mainFooter-->
+
+    </div>
+    <!-- End Container -->
+
+    <script src="js/main.js"></script>    
+
+</body>
+
+</html>

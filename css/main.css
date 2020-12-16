@@ -487,3 +487,119 @@ so it fits on 1024x768 screens.*/
   opacity: 1.0;
 }
 
+/* Page 3 */
+
+#contentCon 
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#content1 
+{
+    width: 440px;
+    border-right: solid 1px #DDD;
+}
+
+#mainContact
+{
+    width: 940px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    line-height: 1px;
+    text-align: left;
+}
+
+/*Text*/
+.contactText
+{
+    line-height: 50px;
+}
+
+/*Form Start*/
+input
+{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid #999;
+    color: #333;
+}
+
+textarea
+{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 5px;
+    padding: 10px;
+    border: 1px solid #999;
+    color: #333;
+}
+
+#comments
+{
+    width: 360px;
+    height: 200px;
+}
+
+#submit
+{
+    width: 75px;
+    height: 30px;
+    background-color: #2e5984;
+    padding: 5px 10px 5px 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #003471;
+}
+
+#submit:hover
+{
+    background-color: #1e3f5d;
+}
+
+.required
+{
+    margin-left: 80px;
+    font-style: italic;
+}
+
+.requiredEmail
+{
+    margin-left: 50px;
+    font-style: italic;
+}
+/*Form End*/
+
+#content2 
+{
+    margin-left: auto;
+    width: 440px;
+}
+
+#newsletter
+{
+    text-decoration: underline;
+}
+
+#employment
+{
+    margin-top: 50px;
+}
+
+
